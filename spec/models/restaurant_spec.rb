@@ -15,7 +15,7 @@ RSpec.describe Restaurant do
         it 'returns total of products for a specific restaurant' do
 
             #restaurant = Restaurant.create(name: 'restaurant 1', address: 'end 1')
-            restaurant = FactoryBot.create(:restaurant)
+            restaurant = FactoryBot.create(:restaurant )
 
             product1 = Product.create(restaurant: restaurant, name: 'p1', value: 10)
             product2 = Product.create(restaurant: restaurant, name: 'p2', value: 10)
