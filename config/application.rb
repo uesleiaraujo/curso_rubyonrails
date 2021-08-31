@@ -34,5 +34,6 @@ module Ieat
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    confi.active_job.queue_adapter = :sidekiq
   end
 end

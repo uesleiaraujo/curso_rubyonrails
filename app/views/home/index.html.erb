@@ -4,8 +4,7 @@
 <% if user_signed_in? %>
     <% if current_user.restaurant? %>
         <%= render 'restaurant' %>
-    <% end %>
-     <% if current_user.customer? %>
+    <% elsif current_user.customer? %>
         <%= render 'customer' %>
     <% end %>
 <% end %>
